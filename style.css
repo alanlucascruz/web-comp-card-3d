@@ -1,15 +1,13 @@
 * {
   font-family: "Roboto";
 }
-
 html,
 body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #020e26;
+  background-color: #151522;
 }
-
 .container {
   display: flex;
   height: 100vh;
@@ -18,13 +16,11 @@ body {
   perspective: 90rem;
   perspective-origin: 30% 60%;
 }
-
 .div-transform {
   display: flex;
   transform: rotateX(10deg) rotateY(15deg) rotateZ(-9deg) scale3d(1, 1, -0.9)
     scale(1.1) translateX(50px);
 }
-
 .card {
   background: url("image.jpg") center;
   color: #ffffff;
@@ -35,7 +31,6 @@ body {
   overflow: hidden;
   transform: translate(0);
 }
-
 .card::before {
   content: "";
   position: absolute;
@@ -46,56 +41,45 @@ body {
   height: 100%;
   opacity: 0.85;
 }
-
 .card h2 {
   text-transform: capitalize;
 }
-
 .card h4 {
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-top: 48px;
 }
-
 .card-1 {
   background-size: cover;
   transform: scale(1.02);
   margin-right: 40px;
 }
-
 .card-1:hover {
   transform: scale(1.11);
   box-shadow: -7px 4px 28px -3px #b527cf;
 }
-
 .card-1::before {
   background: linear-gradient(90deg, #b527cf 0%, #3546f0 100%);
 }
-
 .card-2 {
   background-size: cover;
   transform: scale(1.01);
   margin-right: 31px;
 }
-
 .card-2:hover {
   transform: scale(1.1);
   box-shadow: -7px 4px 28px -3px #3bd9d9;
 }
-
 .card-2::before {
   background: linear-gradient(90deg, #3bd9d9 0%, #8035f0 100%);
 }
-
 .card-3 {
   background-size: cover;
 }
-
 .card-3:hover {
   transform: scale(1.08);
   box-shadow: -7px 4px 28px -3px #ff9500;
 }
-
 .card-3::before {
   background: linear-gradient(90deg, #ff9500 0%, #d5cb0f 100%);
 }
